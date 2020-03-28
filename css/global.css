@@ -1,0 +1,185 @@
+
+*{box-sizing:content-box; outline:none !important;}
+html{height:100%; font-size:14px; -moz-text-size-adjust:100%; -ms-text-size-adjust:100%; -o-text-size-adjust:100%; -webkit-text-size-adjust:100%; text-size-adjust:100%;}
+body{width:100%; height:100%; margin:0 auto; padding:0; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-family: 'Roboto',sans-serif; font-size:14px; line-height:17px; color:#464646; overflow-x:hidden; position:relative;}
+h1, h2, h3, h4, h5, h6, p{display:block; margin:0; padding:0; font-weight:400;}
+.h1, .h2, .h3, .h4, .h5, .h6{margin:0; padding:0; float:none;}
+img, input, textarea, button, a{border:none; outline:none; font-family: 'Roboto',sans-serif; font-weight:400;}
+textarea{position:relative; overflow:hidden; resize:none; box-sizing:border-box; display:block; width:100%;}
+a{cursor:pointer; color:#fff; text-decoration:none;}
+
+table{border-spacing:0;}
+td, th{vertical-align:top; word-wrap:break-word;}
+ul, nav, dl{margin:0; padding:0; list-style:none;}
+button{display:block; cursor:pointer; box-sizing:border-box; padding:0;}
+
+.inner{position:relative;max-width: 1180px;  margin:0 auto;}
+
+.d-flex{display: flex;}
+.flex-wrap{flex-wrap: wrap;}
+.justify-content-center{justify-content: center;}
+.justify-content-between{justify-content: space-between;}
+.align-items-center{align-items: center;}
+.align-items-start{align-items: flex-start;}
+.align-items-end{align-items: flex-end;}
+.flex-shrink-0{flex-shrink: 0;}
+.inputbox::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #0e9ed2;}
+.inputbox::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #0e9ed2;}
+.inputbox:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #0e9ed2;}
+.inputbox:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;color: #0e9ed2;}
+.inputbox:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.inputbox:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.inputbox:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.inputbox:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.textarea::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease;}
+.textarea::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;}
+.textarea:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease;}
+.textarea:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease;}
+.textarea:focus::-webkit-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.textarea:focus::-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.textarea:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+.textarea:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
+
+#wrapper{width:100%; height:auto; margin:0 auto; position:relative; min-height:100%;}
+/* global */
+.g-hidden { display: none; }
+.g-line { zoom: 1; }
+.g-line:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* modal */
+.b-modal { position: relative; margin:0 auto; width:100%; max-width:1000px;}
+
+
+.b-modal{position:relative; z-index:990;}
+
+/* modal */
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 11000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; width:100%; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; -moz-border-radius: 10px;  -webkit-border-radius: 10px;  -khtml-border-radius: 10px;  border-radius: 10px; background: #000; color: #fff; }
+.on__mobile{display: none;}
+
+.rect {
+    background: #000;
+    display: inline-block;
+    height: 2px;
+  
+    transition: transform 500ms;
+    width: 29px;
+  }
+  
+  .rect+.rect{margin-top: 7px;}
+  
+  .rect:nth-child(2) {
+    transition-delay: 100ms;
+  }
+  
+  .rect:nth-child(3) {
+    transition-delay: 100ms;
+  }
+  
+  .burger.active .rect:nth-child(1) {
+    transform: rotate(-45deg) translateX(-5px) translateY(5px);
+    opacity:0
+  }
+  
+  .burger.active .rect:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .burger.active .rect:nth-child(3) {
+    transform: rotate(-45deg) translateX(6px) translateY(-6px);
+  }
+
+  /* Cookie Dialog */
+  #gdpr-cookie-message {
+      background-color: #fff;
+      z-index: 9800;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 375px;
+
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.25);
+    margin-left: 30px;
+   
+}
+#gdpr-cookie-message h4 {
+    color: #000;
+   
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#gdpr-cookie-message h5 {
+   
+   
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#gdpr-cookie-message p, #gdpr-cookie-message ul {
+  
+    font-size: 15px;
+    line-height: 1.5em;
+}
+#gdpr-cookie-message p:last-child {
+    margin-bottom: 0;
+    text-align: right;
+}
+#gdpr-cookie-message li {
+    width: 49%;
+    display: inline-block;
+}
+#gdpr-cookie-message a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted rgba(255,255,255,0.75);
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message a:hover {
+    opacity: .5;
+    border-bottom-color: var(--red);
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message button {
+    
+    border: 1px solid #000;
+    
+    color: white;
+    background-color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding: 7px;
+    margin-top: 15px;
+    border-radius: 3px;
+    
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-types,#gdpr-cookie-advanced{display: none !important; }
+#gdpr-cookie-message button:hover {
+    background: white;
+    color:#000;
+    transition: all 0.3s ease-in;
+}
+button#gdpr-cookie-advanced {
+
+}
+#gdpr-cookie-message button:disabled {
+    opacity: 0.3;
+}
+#gdpr-cookie-message input[type="checkbox"] {
+    float: none;
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+
